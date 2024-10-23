@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Dark Theme</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am [Your Name], a passionate developer with a keen interest
+          in creating innovative web applications. With a solid foundation in
+          HTML, CSS, JavaScript, and frameworks like Bootstrap, I love turning
+          ideas into functional and visually appealing websites. My skills
+          extend to responsive design, where I ensure that my projects provide a
+          seamless user experience across devices.
+        </p>
+        <p>
+          I am particularly interested in [Your Interests, e.g., front-end
+          development, user experience design, or full-stack development]. I
+          continuously seek to enhance my skills and stay updated with the
+          latest industry trends. Whether it’s collaborating on projects or
+          working independently, I enjoy tackling challenges and learning new
+          technologies along the way.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section with Carousel -->
+    <section id="projects" class="py-5 bg-secondary">
+      <div class="container">
+        <h2 class="text-center">My Projects</h2>
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="img/project1.jpg"
+                    class="d-block w-100"
+                    alt="Project 1"
+                  />
+                </div>
+                <div
+                  class="col-md-6 text-light d-flex flex-column justify-content-center"
+                >
+                  <h3>Project Title 1</h3>
+                  <p>
+                    This is a description of the first project. It highlights
+                    the key features and technologies used in the project.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="img/project2.jpg"
+                    class="d-block w-100"
+                    alt="Project 2"
+                  />
+                </div>
+                <div
+                  class="col-md-6 text-light d-flex flex-column justify-content-center"
+                >
+                  <h3>Project Title 2</h3>
+                  <p>
+                    This is a description of the second project. It focuses on
+                    the unique challenges solved and how it benefits users.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="img/project3.jpg"
+                    class="d-block w-100"
+                    alt="Project 3"
+                  />
+                </div>
+                <div
+                  class="col-md-6 text-light d-flex flex-column justify-content-center"
+                >
+                  <h3>Project Title 3</h3>
+                  <p>
+                    This is a description of the third project. It emphasizes
+                    the results achieved and the innovative techniques
+                    implemented.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me via email or through my social media
+          profiles.
+        </p>
+        <a href="mailto:your-email@example.com" class="btn btn-primary"
+          >Send Email</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

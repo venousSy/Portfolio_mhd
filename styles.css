@@ -1,0 +1,92 @@
+/* Base Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White color for headings */
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e0e0; /* Light navbar text */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Brighter hover text */
+}
+
+/* Card Styles */
+.card {
+  background-color: #1f1f1f; /* Dark card background */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Title font size */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Description font size */
+  color: #ccc; /* Slightly lighter text for description */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f1f1f; /* Dark footer background */
+  color: #e0e0e0; /* Light footer text */
+  position: relative; /* Position relative for footer */
+  bottom: 0; /* Stick to bottom */
+  width: 100%; /* Full width */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Smaller title for mobile */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Smaller text for mobile */
+    color: white;
+  }
+  .projects_cont {
+    background-color: inherit !important;
+  }
+  .card {
+    background-color: #6c757d !important;
+  }
+}
+.projects_ection {
+  height: 100vh;
+}
+#projects .carousel img {
+  max-height: 400px; /* Set a max height for the images */
+  width: auto; /* Ensure images keep their aspect ratio */
+  margin: 0 auto; /* Center images */
+  object-fit: contain; /* Ensure the whole image is visible inside the box */
+}
+.card img {
+  max-height: 300px;
+}
