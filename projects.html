@@ -16,7 +16,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" href="/index.html">My Portfolio</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,13 +34,13 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.html">About</a>
+              <a class="nav-link" href="/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -144,12 +144,35 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-light text-center py-3">
+    <footer class="bg-dark text-light text-center py-3">
       <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Check if sections are visible on scroll
+        function checkVisibility() {
+          $("section").each(function () {
+            var sectionTop = $(this).offset().top;
+            var scrollPos = $(window).scrollTop() + $(window).height();
+
+            // Add 'visible' class to trigger bounce animation when section is in viewport
+            if (scrollPos > sectionTop + 50) {
+              $(this).addClass("visible");
+            }
+          });
+        }
+
+        // Initial check on page load
+        checkVisibility();
+
+        // Check visibility on scroll
+        $(window).on("scroll", checkVisibility);
+      });
+    </script>
   </body>
 </html>
