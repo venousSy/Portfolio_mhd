@@ -1,7 +1,6 @@
-/* Base Styles */
 body {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  background-color: #121212;
+  color: #e0e0e0;
   font-family: Arial, sans-serif;
 }
 html {
@@ -12,28 +11,26 @@ h2 {
   margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff; /* White color for headings */
+  color: #ffffff;
 }
 
-/* Navbar Styles */
 .navbar {
   padding: 10px 0;
 }
 
 .navbar-nav .nav-link {
-  color: #e0e0e0; /* Light navbar text */
+  color: #e0e0e0;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Brighter hover text */
+  color: #f8f9fa;
 }
 
-/* Card Styles */
 .card {
-  background-color: #1f1f1f; /* Dark card background */
-  border: none; /* Remove border */
-  border-radius: 10px; /* Rounded corners */
-  transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -60,18 +57,18 @@ footer {
   width: 100%; /* Full width */
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   h2 {
-    font-size: 2rem; /* Smaller heading for mobile */
+    font-size: 2rem;
   }
 
   .card-title {
-    font-size: 1.2rem; /* Smaller title for mobile */
+    font-size: 1.2rem;
   }
 
   .card-text {
-    font-size: 0.9rem; /* Smaller text for mobile */
+    font-size: 0.9rem;
     color: white;
   }
   .projects_cont {
@@ -85,58 +82,57 @@ footer {
   height: 100vh;
 }
 .carousel-item img {
-  max-height: 400px; /* Set a max height for the images */
-  width: auto; /* Ensure images keep their aspect ratio */
-  margin: 0 auto; /* Center images */
-  object-fit: contain; /* Ensure the whole image is visible inside the box */
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 .card img {
   max-height: 300px;
 }
 
 .carousel {
-  position: relative; /* Allow absolute positioning for controls */
-  margin: 0 auto; /* Center the carousel */
-  max-width: 800px; /* Set a maximum width */
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .carousel-inner {
-  overflow: hidden; /* Hide overflow for smoother transitions */
+  overflow: hidden;
 }
 
 .carousel-item {
-  transition: transform 0.5s ease; /* Smooth transition for images */
+  transition: transform 0.5s ease;
 }
 
 .carousel img {
-  display: block; /* Ensure images are block elements */
-  margin: 0 auto; /* Center images horizontally */
-  border-radius: 5px; /* Rounded corners for images */
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%; /* Control button width */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust vertical position */
+  width: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-control-prev span,
 .carousel-control-next span {
-  color: white; /* Control button icon color */
-  font-size: 2rem; /* Increase icon size */
+  color: white;
+  font-size: 2rem;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .carousel {
-    max-width: 100%; /* Full width on smaller screens */
+    max-width: 100%;
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    width: 10%; /* Wider controls on smaller screens */
+    width: 10%;
   }
 }
 
@@ -165,42 +161,41 @@ body.dark-mode i,
 body.dark-mode h2,
 body.dark-mode h1,
 body.dark-mode a {
-  color: #ffffff !important; /* Ensure icons, titles, and links are white in dark mode */
+  color: #ffffff !important;
 }
 
 /* Light mode styles */
 body.light-mode {
   background-color: #ffffff;
-  color: #000000 !important; /* Text color is black in light mode */
+  color: #000000 !important;
 }
 
 body.light-mode .navbar {
-  background-color: #f8f9fa !important; /* Light background for navbar */
+  background-color: #f8f9fa !important;
   color: #000000 !important;
 }
 
 body.light-mode .navbar .nav-link,
 body.light-mode .navbar-brand {
-  color: #000000 !important; /* Nav links and brand text in light mode */
+  color: #000000 !important;
 }
 
 body.light-mode .carousel-item img {
-  border: 2px solid #000 !important; /* Black border for images */
+  border: 2px solid #000 !important;
 }
 
 body.light-mode footer {
-  background-color: #f8f9fa !important; /* Light background for footer */
-  color: #000000 !important; /* Footer text is black in light mode */
+  background-color: #f8f9fa !important;
+  color: #000000 !important;
 }
 
-/* Additional styling to ensure all text, titles, and icons are black in light mode */
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3,
 body.light-mode p,
 body.light-mode a,
 body.light-mode i {
-  color: #000000 !important ; /* Icons, titles, paragraphs, and links are black in light mode */
+  color: #000000 !important ;
 }
 
 /* Button styles */
@@ -213,7 +208,7 @@ body.light-mode .btn-outline-light {
   color: #000 !important;
   border-color: #000 !important;
 }
-/* Initial hidden state */
+
 section {
   opacity: 0;
   transform: translateY(50px);
@@ -235,7 +230,6 @@ section {
   }
 }
 
-/* Visible state with animation */
 section.visible {
   opacity: 1;
   animation: bounceIn 0.6s ease-out;

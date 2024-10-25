@@ -40,11 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("messageError").style.display = "none";
       }
 
-      // If no errors, show success message
       if (!hasError) {
         document.getElementById("formSuccess").style.display = "block";
 
-        // Optionally, reset form fields
         document.getElementById("contactForm").reset();
       }
     });
